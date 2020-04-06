@@ -21,6 +21,7 @@ Position SingleRotateWithRight(Position K2);
 Position DoubleRotateWithLeft(Position K3);
 Position DoubleRotateWithRight(Position K3);
 int Height(Position P);//返回节点高度值
+void PrintTree(AvlTree T);
 
 struct AvlNode
 {
@@ -155,6 +156,11 @@ AvlTree Delete(ElementType X, AvlTree T)
 	return T;
 }
 
+ElementType Retrieve(Position P)
+{
+	return P->Element;
+}
+
 static int Height(Position P)
 {
 	if (P == NULL)
@@ -205,6 +211,20 @@ Position DoubleRotateWithRight(Position K3)
 	return SingleRotateWithRight(K3);
 }
 
+void PrintElement(ElementType X)
+{
+	cout << X << endl;
+}
+
+void PrintTree(AvlTree T)
+{
+	if (T != NULL)
+	{
+		PrintTree(T->Left);
+		PrintElement(T->Element);
+		PrintTree(T->Right);
+	}
+}
 
 int main(int argc, char* argv[])
 {

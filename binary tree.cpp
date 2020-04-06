@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 typedef int ElementType;
@@ -15,6 +16,8 @@ Position FindMax(SearchTree T);
 SearchTree Insert(ElementType X, SearchTree T);
 SearchTree Delete(ElementType X, SearchTree T);
 ElementType Retrieve(Position P);
+void PrintTree(SearchTree T);
+int Height(Position P);
 
 struct TreeNode
 {
@@ -143,9 +146,31 @@ SearchTree Delete(ElementType X, SearchTree T)
 
 ElementType Retrieve(Position P)
 {
-
+	return P->Element;
 }
 
+static void PrintElement(ElementType X)
+{
+	cout << X << endl;
+}
+
+void PrintTree(SearchTree T)
+{
+	if (T != NULL)
+	{
+		PrintTree(T->Left);
+		PrintElement(T->Element);
+		PrintTree(T->Right);
+	}
+}
+
+static int Height(SearchTree T)
+{
+	if (T == NULL)
+		return -1;
+	else
+		return 1 + max(Height(T->Left), Height(T->Right));
+}
 
 int main(int argc, char* argv[])
 {
