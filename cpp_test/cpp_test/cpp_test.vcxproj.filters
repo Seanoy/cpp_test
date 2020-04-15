@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\AVLTree.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\binary tree.cpp">
+    <ClCompile Include="open_addressing_hash_table.cpp.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -45,11 +45,11 @@ int minSubsequence(const int A[], int N)
 //求最小正子序列之和
 //鸡尾酒排序
 void CocktailSort(int A[], int N) {
-	int left = 0;                                          //初始化左边界
-	int right = N - 1;                                   //初始化右边界
+	int left = 0;										//初始化左边界
+	int right = N - 1;									//初始化右边界
 	while (left < right)
 	{
-		for (int i = left; i < right; i++)        //前半部分，将最大元素放在后面
+		for (int i = left; i < right; i++)				//前半部分，将最大元素放在后面
 		{
 			if (A[i] > A[i + 1])
 			{
@@ -57,7 +57,7 @@ void CocktailSort(int A[], int N) {
 			}
 		}
 		right--;
-		for (int i = right; i > left; i--)        //后半部分,将最小元素放到前面
+		for (int i = right; i > left; i--)				//后半部分,将最小元素放到前面
 		{
 			if (A[i - 1] > A[i])
 			{

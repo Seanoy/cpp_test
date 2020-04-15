@@ -14,9 +14,6 @@ int IsLast(const Position P, const List L);
 Position FindPrevious(ElementType X, const List L);
 void Insert(ElementType X, List L, Position p);
 void DeleteList(List L);
-Position Header(const List L);
-Position First(const List L);
-Position Advance(const Position P);
 ElementType Retrieve(const Position P);
 
 struct Node
@@ -117,6 +114,16 @@ void Insert(ElementType X, List L, Position P)
 	CursorSpace[TmpCell].Element = X;
 	CursorSpace[TmpCell].Next = CursorSpace[P].Next;
 	CursorSpace[P].Next = TmpCell;
+}
+
+void DeleteList(List L)
+{
+	CursorSpace[L].Next = 0;
+}
+
+ElementType Retrieve(const Position P)
+{
+	return CursorSpace[P].Element;
 }
 
 int main(int argc, char argv[])
