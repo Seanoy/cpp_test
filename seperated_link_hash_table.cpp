@@ -3,6 +3,8 @@ using namespace std;
 
 typedef int Index;
 typedef char* ElementType;
+//分离链接法
+//解决链表冲突的函数F(i)=i
 
 struct ListNode;
 typedef struct ListNode *Position;

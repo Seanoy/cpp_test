@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="open_addressing_hash_table.cpp.cpp">
+    <ClCompile Include="miniheap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
