@@ -17,33 +17,36 @@ long int pow(int x, int n)
 
 int main(void)
 {
-	//string str;
-	//while (cin >> str)
-	//{
-	//	int bit = 0;
-	//	int result = 0;
-	//	for (int i = str.length() - 1; i > 1; i--)
-	//	{
-	//		if (str[i] >= '0'&&str[i] <= '9')
-	//		{
-	//			result += (str[i] - '0') * pow(16, bit++);
-	//		}
-	//		else if (str[i] >= 'A'&&str[i] <= 'F')
-	//		{
-	//			result += (str[i] - 'A' + 10) * pow(16, bit++);
-	//		}
-	//		else if (str[i] >= 'a'&&str[i] <= 'f')
-	//		{
-	//			result += (str[i] - 'a' + 10) * pow(16, bit++);
-	//		}
-	//	}
-	//	cout << result << endl;
-	//}
+	string str;
+	while (cin >> str)
+	{
+		int bit = 0;
+		int result = 0;
+		for (int i = str.length() - 1; i > 1; i--)
+		{
+			if (str[i] >= '0'&&str[i] <= '9')
+			{
+				result += (str[i] - '0') * pow(16, bit++);
+			}
+			else if (str[i] >= 'A'&&str[i] <= 'F')
+			{
+				result += (str[i] - 'A' + 10) * pow(16, bit++);
+			}
+			else if (str[i] >= 'a'&&str[i] <= 'f')
+			{
+				result += (str[i] - 'a' + 10) * pow(16, bit++);
+			}
+		}
+		cout << result << endl;
+	}
 
 	//»òÕß
 	//int num;
 	//while (cin >> hex >> num)
 	//	cout << num << endl;
 
+	//int a;
+	//while(scanf("%x",&a)!=EOF)
+	//{printf("%d",a);}
 	return 0;
 }
