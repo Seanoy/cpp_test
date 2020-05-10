@@ -19,9 +19,20 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="miniheap.cpp" />
-    <ClCompile Include="源6 - 副本.cpp" />
-    <ClCompile Include="源6.cpp" />
+    <ClCompile Include="源 - 副本 (10).cpp" />
+    <ClCompile Include="源 - 副本 (11).cpp" />
+    <ClCompile Include="源 - 副本 (12).cpp" />
+    <ClCompile Include="源 - 副本 (13).cpp" />
+    <ClCompile Include="源 - 副本 (2).cpp" />
+    <ClCompile Include="源 - 副本 (3).cpp" />
+    <ClCompile Include="源 - 副本 (4).cpp" />
+    <ClCompile Include="源 - 副本 (5).cpp" />
+    <ClCompile Include="源 - 副本 (6).cpp" />
+    <ClCompile Include="源 - 副本 (7).cpp" />
+    <ClCompile Include="源 - 副本 (8).cpp" />
+    <ClCompile Include="源 - 副本 (9).cpp" />
+    <ClCompile Include="源 - 副本.cpp" />
+    <ClCompile Include="源.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

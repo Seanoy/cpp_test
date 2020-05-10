@@ -2,7 +2,7 @@
 #include <string>
 #include <unordered_map>
 using namespace std;
-//关于hasp表操作
+//关于hash表操作
 //https://www.cnblogs.com/slothrbk/p/8823092.html
 //https://leetcode-cn.com/problems/encode-and-decode-tinyurl/solution/tinyurlde-jia-mi-yu-jie-mi-by-leetcode/
 class Solution {

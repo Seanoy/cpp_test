@@ -47,6 +47,7 @@ public:
 		fs << '}';
 		fs.close();
 	}
+
 	long long nthUglyNumber(int n) {
 		return num[n - 1];
 	}
